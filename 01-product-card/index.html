@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SpurIT - Тестовое задание 1. HTML и CSS</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <main>
-<!-- Напиши разметку на этом месте и больше ничего не трогай -->
+  <section class="products">
+    <h2 class="products__title title">ТОВАРЫ НЕДЕЛИ</h2>
+    <div class="products__row">
+      <div class="product-card">
+        <div class="product-card__tags">
+          <span class="product-card__tag product-card__tag-new">
+            НОВИНКА
+          </span>
+          <span class="product-card__tag product-card__tag-last">
+            ПОСЛЕДНИЙ
+          </span>
+        </div>
+        <img class="product-card__img" src="./img/Image.png" alt="Orange" />
+        <h3 class="product-card__title">Апельсиновый сок</h3>
+        <p class="product-card__text">
+          Он придётся по душе, даже если ты слива лиловая, спелая, садовая.
+        </p>
+        <button class="product-card__btn">В КОРЗИНУ</button>
+      </div>
+      <div class="product-card">
+        <img class="product-card__img" src="./img/Image.png" alt="Orange" />
+        <h3 class="product-card__title">Апельсиновый сок</h3>
+        <p class="product-card__text">
+          Он придётся по душе, даже если ты слива лиловая, спелая, садовая.
+          Ну что сказать? Ну что сказать? Устроены так длинные описания.
+        </p>
+        <button class="product-card__btn">В КОРЗИНУ</button>
+      </div>
+      <div class="product-card">
+        <img class="product-card__img" src="./img/Image.png" alt="Orange" />
+        <h3 class="product-card__title">Апельсиновый сок</h3>
+        <p class="product-card__text">
+          Он придётся по душе, даже если ты слива лиловая, спелая, садовая.
+        </p>
+        <button class="product-card__btn product-card__btn-disabled">
+          ЗАКОНЧИЛИСЬ
+        </button>
+      </div>
+    </div>
+  </section>
 </main>
 </body>
 </html>

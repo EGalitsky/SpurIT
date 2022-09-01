@@ -1,1 +1,161 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background-color: #f6f6f6;
+}
+
+.products__title {
+  margin: 4rem 0;
+}
+
+.title {
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 7.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 38rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #2f2f2f;
+  overflow: hidden;
+}
+
+.product-card__tags {
+  position: absolute;
+  top: 1.7rem;
+  left: 1.7rem;
+}
+
+.product-card__tag {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  display: inline-block;
+  padding: 0 1.6rem;
+  margin-right: 1.7rem;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  border-radius: 100px;
+}
+
+.product-card__tag-new {
+  background-color: #fdcff3;
+}
+
+.product-card__tag-last {
+  background-color: #ffcf56;
+}
+
+.product-card__title {
+  margin: 2.4rem 2.4rem 1.6rem 2.4rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 3.6rem;
+  color: #2f2f2f;
+}
+
+.product-card__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #2f2f2f;
+  margin: 0rem 2.4rem 2.4rem 2.4rem;
+}
+
+.product-card__btn,
+.product-card__btn:link,
+.product-card__btn:visited {
+  height: 4.8rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  color: #42940f;
+  background-color: #e5e5e5;
+  border: 1px solid #42940f;
+  border-radius: 8px;
+  margin: auto 2.4rem 2.4rem 2.4rem;
+}
+
+.product-card__btn:hover {
+  cursor: pointer;
+  border: 2px solid #42940f;
+  background-color: #42940f;
+  color: #ffffff;
+}
+
+.product-card__btn:active {
+  border: 2px solid #1f5200;
+  background-color: #1f5200;
+  color: #ffffff;
+}
+
+.product-card__btn-disabled,
+.product-card__btn-disabled:link,
+.product-card__btn-disabled:active,
+.product-card__btn-disabled:visited,
+.product-card__btn-disabled:hover {
+  cursor: default;
+  border: 1px solid #4e4e4e;
+  background-color: #4e4e4e;
+  color: #ffffff;
+}
+
+@media (max-width: 75em) {
+  .products__row {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .title {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .products__row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .products__title {
+    margin: 1.5rem 0;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  .product-card__title {
+    font-size: 2rem;
+  }
+
+  .product-card__tag {
+    margin-bottom: 1.7rem;
+  }
+}
